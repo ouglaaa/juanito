@@ -25,7 +25,6 @@
     <list default="true" id="e8aa0445-056f-4bf8-a73a-36ab7bdbd93d" name="Default Changelist" comment="working Juanito">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/mod.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +118,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="working Juanito" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="198" key="#Inspections" timestamp="1600708165239">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040/1920.-335.1200.1880/-1920.294.1920.1040@0.0.1920.1040" timestamp="1600708165239" />
     <state x="730" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595172909679">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -131,26 +134,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.-335.1200.1880/-1920.294.1920.1040@0.0.1920.1040" timestamp="1599981319451" />
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1599909688397">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1600754161812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-335.1200.1880/-1920.294.1920.1040@0.0.1920.1040" timestamp="1599909688397" />
-    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1599909688397">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-335.1200.1880/-1920.294.1920.1040@0.0.1920.1040" timestamp="1600754161812" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1600754161812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-335.1200.1880/-1920.294.1920.1040@0.0.1920.1040" timestamp="1599909688397" />
-    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1599909688397">
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-335.1200.1880/-1920.294.1920.1040@0.0.1920.1040" timestamp="1600754161812" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1600754161812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-335.1200.1880/-1920.294.1920.1040@0.0.1920.1040" timestamp="1599909688397" />
-    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1599909688397">
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-335.1200.1880/-1920.294.1920.1040@0.0.1920.1040" timestamp="1600754161812" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1600754161812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-335.1200.1880/-1920.294.1920.1040@0.0.1920.1040" timestamp="1599909688397" />
-    <state x="561" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595342778485">
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-335.1200.1880/-1920.294.1920.1040@0.0.1920.1040" timestamp="1600754161812" />
+    <state x="561" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600754133515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="561" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.-335.1200.1880/-1920.294.1920.1040@0.0.1920.1040" timestamp="1595342778485" />
+    <state x="561" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.-335.1200.1880/-1920.294.1920.1040@0.0.1920.1040" timestamp="1600754133515" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599774160873">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -50,27 +50,39 @@ impl LoggingChannelDiscovery for Handler {
 
 impl EventHandler for Handler {
     // User leaves the guild
-    fn guild_member_removal(&self, _ctx: Context, _guild: GuildId, _user: serenity::model::user::User, _member_data_if_available: Option<Member>) {
+    fn guild_member_removal(&self, _ctx: Context, _guild: GuildId, _user: User, _member_data_if_available: Option<Member>) {
         if let log = self.get_logging_channel(&_ctx, _guild.0).unwrap() {
             if let member_data = _member_data_if_available.unwrap() {
                 log.send_message(&_ctx.http,
                                  |m|
-                                     m.content(format!(":arrow_right::door: <@{}> ({}) has left the server.\r\n[{}]", _user.name, member_data.nick.unwrap(), Local::now())));
+                                     if let user = _user {
+                                         m.content(format!("* <@{}> has quit the server the server. :arrow_right::door:\r\n[{}]", user.name, Local::now()))
+                                     } else {
+                                         let x = m.content(format!("* user as join the server. :arrow_right::door:\r\n[{}]", Local::now()));
+                                         x
+                                     });
             }
         }
     }
 
     fn guild_member_addition(&self, _ctx: Context, _guild_id: GuildId, _new_member: Member) {
         if let log = self.get_logging_channel(&_ctx, _guild_id.0).unwrap() {
-                log.send_message(&_ctx.http,
-                                 |m|
-                                     m.content(format!("* <@{}> has join the server.\r\n[{}]", _new_member.nick.unwrap() , Local::now())));
-            }
+            log.send_message(&_ctx.http, |m|
+
+                if let user = _new_member.user.read() {
+                    m.content(format!("* <@{}> has join the server.\r\n[{}]", user.name, Local::now()))
+                } else {
+                    let x = m.content(format!("* as join the server.\r\n[{}]", Local::now()));
+                    x
+                }
+            );
+        }
     }
 
 
     /// Dispatched when a reaction is detached from a message.
     /// raid help id 579155972115660803
+    ///              579155972115660803
     /// Provides the reaction's data.
     fn reaction_add(&self, _ctx: Context, _added_reaction: Reaction) {
         if let userId = _added_reaction.user_id.0 {
@@ -109,7 +121,7 @@ impl EventHandler for Handler {
                                     let chan = log.unwrap();
                                     chan.send_message(&_ctx.http,
                                                       |m| {
-                                                          m.content(format!("<<#{}>> <@{}> [{}] Removed [{}]",  _removed_reaction.channel_id.0, userId, _removed_reaction.emoji, Local::now(),))
+                                                          m.content(format!("<<#{}>> <@{}> [{}] Removed [{}]", _removed_reaction.channel_id.0, userId, _removed_reaction.emoji, Local::now(), ))
                                                       });
                                 }
                             }
@@ -121,7 +133,6 @@ impl EventHandler for Handler {
         }
     }
 }
-
 
 fn main() {
     let config: src::config::Config = src::config::Config::new();
