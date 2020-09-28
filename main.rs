@@ -123,6 +123,7 @@ impl EventHandler for Handler {
                                                       |m| {
                                                           m.content(format!("<<#{}>> <@{}> [{}] Removed [{}]", _removed_reaction.channel_id.0, userId, _removed_reaction.emoji, Local::now(), ))
                                                       });
+
                                 }
                             }
                         }
